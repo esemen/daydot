@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daydot Beer Gallery</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mx-auto p-4 bg-gray-200">
+        <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
+            <div>
+                <header class="mb-4">Beer Gallery</header>
+                <div class="beers flex flex-col space-y-4">Loading...</div>
+                <div class="mt-2 bg-gray-200 p-3">
+                    <div>
+                        <p>Page: <span id="pageNumber"></span></p>
+                    </div>
+                    <div class="filter">
+                        <button id="prevPage" class="bg-red-200 w-6 h-6 font-small" disabled>
+                            &lt;
+                        </button>
+                        <button id="nextPage" class="bg-red-200 w-6 h-6 font-small">
+                            &gt;
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="favourites">
+                <header class="mb-4">My Favourites</header>
+                <div class="favs flex flex-col space-y-4">Loading...</div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/tpl/favourite.js"></script>
+    <script src="assets/js/tpl/product.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
